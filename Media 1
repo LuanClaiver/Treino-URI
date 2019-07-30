@@ -1,0 +1,9 @@
+A = float(input("Insira uma nota(Nota maxima 10):"))
+B = float(input("Insira uma nota(Nota maxima 10):"))
+if A > 10:
+  SyntaxError
+if B > 10:
+  SyntaxError
+else:
+  MEDIA = ((A * 3.5) + (B * 7.5)) / ((3.5) + (7.5))
+print 'MEDIA = %.5F' % MEDIA
