@@ -1,0 +1,26 @@
+  6° - Escreva um programa para aprovar o empréstimo bancário para compra de
+uma casa. O programa deve perguntar o valor da casa a comprar, o salário e a
+quantidade de anos a pagar. O valor da prestação mensal não pode ser superior a
+30% do salário. Calcule o valor da prestação como sendo o valor da casa a comprar
+dividido pelo número de meses a pagar.
+
+#EX6 - Estruturas de Condicao - Emprestimo bancario para compra de uma casa
+
+valorCasa = int(input("Valor da casa a ser comprada:"))
+salario = int(input("Valor do salario:"))
+anosPagar = int(input("Quantidade de anos a pagar a casa:"))
+mesesPagar = float((12 / anosPagar))
+trintaPorCentoSalario = (salario * 0.3) - salario
+prestacaoCasa = float((valorCasa / mesesPagar))
+
+print()
+print("30 por cento salario:", trintaPorCentoSalario, "PRestacao casa:", prestacaoCasa)
+
+if prestacaoCasa > trintaPorCentoSalario:
+  print("Voce nao pode fazer o emprestimo.. Sorry..")
+else:
+  print("O emprestimo pode ser concebido")
+  
+  
+  
+  Tentar ajeitar depois..
