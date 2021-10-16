@@ -13,14 +13,11 @@ mesesPagar = float((12 / anosPagar))
 trintaPorCentoSalario = (salario * 0.3) - salario
 prestacaoCasa = float((valorCasa / mesesPagar))
 
-print()
 print("30 por cento salario:", trintaPorCentoSalario, "PRestacao casa:", prestacaoCasa)
 
 if prestacaoCasa > trintaPorCentoSalario:
   print("Voce nao pode fazer o emprestimo.. Sorry..")
 else:
   print("O emprestimo pode ser concebido")
-  
-  
-  
-  Tentar ajeitar depois..
+
+##Tentar ajeitar depois..
