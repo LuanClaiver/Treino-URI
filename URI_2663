@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+def selection_sort(A, n):
+    for i in range(0, n - 1):
+        maior = i
+        for j in range(i + 1, n):
+            if A[j] > A[maior]:
+                maior = j
+        A[i], A[maior] = A[maior], A[i]
+
+    return A
+
+
+if __name__ == '__main__':
+    N = int(input())
+    K = int(input())
+    x = []
+    cont = K
+    for i in range(0, N):
+        x.append(int(input()))
+    x = selection_sort(x, N)
+    while cont < N and x[cont] == x[K - 1]:
+        cont += 1
+    print(cont)
